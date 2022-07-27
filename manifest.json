@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2, 
+    "name": "GeoTab",
+    "version": "0.1.6",
+    "description": "Entertaining and informative extension that helps to consolidate the knowledges in Georgraphy.",
+    "author": "Zhandos A. Brown",
+    "icons": {
+        "16": "icons/GeoTabIcon.png",
+        "48": "icons/GeoTabIcon.png",
+       "128": "icons/GeoTabIcon.png" 
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Click and Learn!"
+    },
+    "host_permissions": [],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["script.js"],
+            "css": ["style.css"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "<all_urls>"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'"
+}

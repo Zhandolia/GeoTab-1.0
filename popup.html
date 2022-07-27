@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>GeoTab</title>
+</head>
+<body>
+    <div class="container"> 
+        <h2> Whose flag is it?</h2>
+        <h3>54/254</h3>
+        
+        <button type="button" class="next" onclick="display_random_image()">Next</button>
+
+        <img src = "flags/kz.png" alt = "KZ" width = "200"kz height = "100" class="flags">
+
+        <button type="button" class="uz">Uzbekistan</button>
+        <button type="button" class="kz">Kazakhstan</button>
+        <button type="button" class="ky">Kyrgyzstan</button>
+
+        <h3>Right: <span id = "right">46</span></h3>
+        <h3>Wrong: <span id = "wrong">8</span></h3>
+
+        <button type = "button">Capitals</button>
+        <button type = "button">Locations</button>
+    </div>
+</body>
+</html>  
+
+<script>  
+</script>
+
+
+
+
+
+<html lang="en" dir="ltr">
+    <head>
+        <title> Random Image </title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="index.css"/>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="inner_container">
+                <img id="image_shower"/>
+            </div>
+            <div id="button_container">
+                <button onclick="get_random_image()"> <i class="fas fa-random"></i></button>
+            </div>
+        </div>
+    </body>
+</html>

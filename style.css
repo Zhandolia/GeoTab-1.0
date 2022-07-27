@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans';
+    color:#071330;
+    background-color:#f0f2f4;
+}
+
+.container {
+    width: 300px;
+}
+
+.next {
+    width: 50px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #ffff00;
+    position: absolute;
+    left: 240px;
+    top: 60px;
+    cursor: pointer;
+}
+
+.next:hover {
+    background-color: #91913a;
+}
+
+.uz {
+    position: absolute;
+    left: 215px;
+    top: 160px;
+    height: 30px;
+}
+
+.kz {
+    position: absolute;
+    left: 215px;
+    top: 125px;
+    height: 30px;
+}
+
+.ky {
+    position: absolute;
+    left: 215px;
+    top: 90px;
+    height: 30px;
+}
+
+.flags {
+    position: relative;
+    top: -10px;
+    left: -5px;
+    border-radius: 3px;
+    border-radius: 5px;
+    padding: 5px;
+}
